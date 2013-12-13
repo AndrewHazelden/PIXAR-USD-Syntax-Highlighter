@@ -1,0 +1,23 @@
+#usda 1.0
+
+(
+  framesPerSecond = 24.0
+  doc = "This is a doc string."
+)
+
+# This is a comment.
+
+def Xform "Object_xf" (inherits = </SomeClass>)
+{
+  Transform transform = ((1,0,0,0),
+                                    (0,1,0,0),
+                                    (0,0,1,0),
+                                    (0,0,0,1))
+
+  def Subdiv "Object_Subd"
+  {
+    custom float[] floatAttribute (hidden = true)
+  }
+}
+
+

@@ -1,0 +1,15 @@
+#usda 1.0
+
+def "Luxo" ( 
+  references = @a.usd@</FirstPath>
+
+  add references = @b.usd@</SecondPath>
+  add references = @c.usd@</ThirdPath>
+
+  delete references = @a.usd@</FirstPath>
+
+  reorder references = [
+    @c.usd@</ThirdPath>,
+    @b.usd@</SecondPath>]
+){}
+

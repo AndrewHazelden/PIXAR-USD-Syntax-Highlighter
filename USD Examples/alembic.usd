@@ -1,0 +1,10 @@
+#usda 1.0
+
+def "luxo_low" (
+  references = [ @alembic_luxo.abc@</luxo_low> ]
+)
+{
+  over "luxo_lowShape" {
+          Color color = (.8, .8, .8)
+    }
+}
