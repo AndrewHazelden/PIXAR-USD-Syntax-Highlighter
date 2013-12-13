@@ -6,7 +6,7 @@ by Andrew Hazelden
 
 ## Overview ##
 
-This is a proof of concept Notepad++ syntax highlighting module for the code from **[Pixar's USD format](http://graphics.pixar.com/usd/)**. Since the **Universal Scene Description format** format hasn't been formalized yet, the syntax highlighter will be updated as more information is released.
+This is a proof of concept Notepad++ syntax highlighting module for the code from **[Pixar's USD format](http://graphics.pixar.com/usd/)**. Since the **Universal Scene Description**  format hasn't been formalized yet, the syntax highlighter will be updated as more information is released.
 
 ----------
 
