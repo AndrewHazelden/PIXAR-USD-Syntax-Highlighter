@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>README</title>
+<title>Documentation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
-/* Source: https://github.com/nicolahery/markdownpad-github */
+/* Stylesheet for Markdown */
 
 /* RESET
 =============================================================================*/
@@ -21,12 +18,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* BODY
 =============================================================================*/
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/SourceCodePro-Regular.ttf');
+}
+
+@import url("fonts/font-awesome.min.css");
+
 body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #1C1C1C;
   padding: 20px;
   max-width: 960px;
   margin: 0 auto;
@@ -45,6 +58,8 @@ body>*:last-child {
 
 p, blockquote, ul, ol, dl, table, pre {
   margin: 15px 0;
+  color: #AAAAAA;
+  /* color: #7D8686; */
 }
 
 /* HEADERS
@@ -63,30 +78,42 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 
 h1 {
   font-size: 28px;
-  color: #000;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid #D0D0D0;
+  color: #D0D0D0;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 400;
+  color: #D0D0D0;
 }
 
 h4 {
   font-size: 16px;
+  color: #D0D0D0;
 }
 
 h5 {
   font-size: 14px;
+  color: #D0D0D0;
 }
 
 h6 {
-  color: #777;
   font-size: 14px;
+  color: #D0D0D0;
+}
+
+h7 {
+  font-size: 14px;
+  color: #D0D0D0;
+  /* color: #277BA5; */
 }
 
 body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
@@ -120,6 +147,7 @@ a:hover {
 
 ul, ol {
   padding-left: 30px;
+  color: #C4C4C4;
 }
 
 ul li > :first-child, 
@@ -177,15 +205,16 @@ dl dd>:last-child {
 
 pre, code, tt {
   font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 code, tt {
   margin: 0 0px;
   padding: 0px 0px;
   white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
+  border: 1px solid #262626;
+  background-color: #363636;
+  color: #D0D0D0;
   border-radius: 3px;
 }
 
@@ -198,8 +227,8 @@ pre>code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #363636;
+  border: 1px solid #262626;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -225,7 +254,7 @@ kbd {
     border-radius: 2px 2px 2px 2px;
     border-style: solid;
     border-width: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
     line-height: 10px;
     padding: 1px 4px;
 }
@@ -269,35 +298,40 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
+  /* border: 1px solid #ccc; */ 
+  /* padding: 6px 13px; */ 
 }
 
 table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
+  /* border-top: 1px solid #ccc; */
+  /* background-color: #363636; */
+  /* color: #D0D0D0; */
 }
 
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
 
 /* IMAGES
 =============================================================================*/
 
 img {
-  max-width: 100%
+  max-width: 80%;
+  /* max-width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 </head>
-<body>
-<h1>PIXAR USD Syntax Highlighter</h1>
-<p><strong>Version 0.2</strong> Released 2016-01-21<br />
-by Andrew Hazelden  </p>
+<body><h1>PIXAR USD Syntax Highlighter</h1>
+<p><strong>Version 0.3</strong> Released 2019-12-29<br />
+by Andrew Hazelden</p>
 <p><img src="ascii-usd-screenshot.png" alt="Sample USD file" /></p>
 <h2>Overview</h2>
-<p>This is a proof of concept Notepad++ syntax highlighting module for the code from <strong><a href="http://graphics.pixar.com/usd/">Pixar's USD format</a></strong>. Since the <strong>Universal Scene Description</strong>  format hasn't been formalized yet, the syntax highlighter will be updated as more information is released.</p>
+<p>This project hosts a collection of syntax highlighting modules for <strong><a href="http://graphics.pixar.com/usd/">Pixar USD (Universal Scene Description) ASCII format</a></strong> documents.</p>
 <h2>Version History</h2>
+<h3>Version 0.3 - 2019-12-29</h3>
+<ul>
+<li>Added a <a href="http://qbnz.com/highlighter/documentation.php">GeSHi</a> module with two example php webpages that render USD ASCII files a light and dark background CSS variation.</li>
+</ul>
 <h3>Version 0.2 - 2016-01-21</h3>
 <ul>
 <li>Added support for highlighting files with the .usda file extension</li>
@@ -309,11 +343,7 @@ by Andrew Hazelden  </p>
 <hr />
 <p>Cheers,<br />
 Andrew Hazelden</p>
-<p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a> <br />
-Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a><br />
-Twitter: <a href="https://twitter.com/andrewhazelden">@andrewhazelden</a><br />
-Google+: <a href="https://plus.google.com/+AndrewHazelden">https://plus.google.com/+AndrewHazelden</a></p>
-
+<p>Email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a><br />
+Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

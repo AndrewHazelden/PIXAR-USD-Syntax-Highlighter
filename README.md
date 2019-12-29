@@ -1,14 +1,18 @@
 # PIXAR USD Syntax Highlighter #
-**Version 0.2** Released 2016-01-21  
+**Version 0.3** Released 2019-12-29  
 by Andrew Hazelden  
 
 ![Sample USD file](ascii-usd-screenshot.png)
 
 ## Overview ##
 
-This is a proof of concept Notepad++ syntax highlighting module for the code from **[Pixar's USD format](http://graphics.pixar.com/usd/)**. Since the **Universal Scene Description**  format hasn't been formalized yet, the syntax highlighter will be updated as more information is released.
+This project hosts a collection of syntax highlighting modules for **[Pixar USD (Universal Scene Description) ASCII format](http://graphics.pixar.com/usd/)** documents.
 
 ## Version History ##
+
+### Version 0.3 - 2019-12-29 ###
+
+- Added a [GeSHi](http://qbnz.com/highlighter/documentation.php) module with two example php webpages that render USD ASCII files a light and dark background CSS variation.
 
 ### Version 0.2 - 2016-01-21 ###
 
@@ -23,7 +27,5 @@ This is a proof of concept Notepad++ syntax highlighting module for the code fro
 Cheers,  
 Andrew Hazelden
 
-Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)   
+Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
 Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)  
-Twitter: [@andrewhazelden](https://twitter.com/andrewhazelden)  
-Google+: [https://plus.google.com/+AndrewHazelden](https://plus.google.com/+AndrewHazelden)
