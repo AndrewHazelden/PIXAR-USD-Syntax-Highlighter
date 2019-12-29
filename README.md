@@ -12,7 +12,7 @@ This project hosts a collection of syntax highlighting modules for **[Pixar USD 
 
 ### Version 0.3 - 2019-12-29 ###
 
-- Added a [GeSHi](http://qbnz.com/highlighter/documentation.php) module with two example php webpages that render USD ASCII files a light and dark background CSS variation.
+- Added a [GeSHi](http://qbnz.com/highlighter/documentation.php) module with two example php webpages that render USD ASCII files with a light and dark background CSS variation.
 
 ### Version 0.2 - 2016-01-21 ###
 
